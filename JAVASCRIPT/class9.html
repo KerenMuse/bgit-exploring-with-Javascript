@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <script>
+        let numbers = ["Hello", "Hi", "Salute"];
+
+        let EmployeeDetails = [
+            {
+                name: "Keren",
+                role: "Software Engineer",
+                grade: 2,
+            },
+
+            {
+                name: "Mike",
+                role: "Accountant",
+                grade: 3,
+            },
+
+            {
+                name: "Sarah",
+                role: "Product Manager",
+                grade: 2,
+            },
+        ];
+
+        let newNumbers = numbers.map((val, key) => {
+        return `My name is ${val.name}, a ${val.role} and my grade is level ${val.grade}`;
+        });
+
+        console.log(MappedDetails);
+
+        let newNumbers = numbers.map((val, index) => {
+            return `Mike says ${val}`;
+        });
+        //console.log(numbers);
+    </script>
+</body>
+</html>

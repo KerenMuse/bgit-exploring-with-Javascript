@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <input id="user-input" type="text" />
+    <div id="user-typed-data"></div>
+
+    <script>
+        let userInput = document.getElementById('user-input');
+        document.getElementById('user-typed-data').innerText = "<h1>Hello</>";
+
+        userInput.addEventListener('keyUp', function() {
+           // triggers every time the key pressed goes up
+           userTyped.innerText = userInput.value; 
+        });
+
+        // event handling
+        // dom maipulation
+        // form validation
+    </script>
+</body>
+</html>

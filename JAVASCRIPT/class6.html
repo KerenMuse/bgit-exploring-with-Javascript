@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  </head>
+  <body>
+   <nav class="py-3 w-100 bg-light">
+   <div class="container">
+    <div class="d-flex justify-content-between align-items-center"></div>
+    <div>
+        <!-- logo -->
+        <img width="100" src="./logo.png" alt="logo-image" />
+    </div>
+
+    <div class="d-lg-flex d-none justify-content-between w-25">
+        <!-- menu items-->
+        <div>
+            <a href="#">Home</a>
+        </div>
+
+        </div>
+            <a href="#">About</a>
+        <div>
+
+        <div>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Information</a></li>
+                      <li><a class="dropdown-item" href="#">Questions</a></li>
+                      <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                    </ul>
+                  </div>
+              </div>
+        </div>
+
+        <div>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="d-lg-none">
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+   </div>
+
+   <!-- mobile-nav -->
+
+   <aside id="mobile-nav" class="pisition-fixed top-0 end-0 bg-info p-3 mobile-nav vh-100  d-lg-none d-none">
+    <div class="close-btn" class="text-end">
+        <button>
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <div class="pb-2">
+        <a class="text-white" href="#">Home</a>
+    </div>
+
+    <div class="pb-2">
+        <a class="text-white" href="#">About</a>
+    </div>
+
+    <div class="pb-2">
+        <a class="text-white" href="#">Services</a>
+    </div>
+
+    <div class="pb-2">
+        <a class="text-white" href="#">Contact</a>
+    </div>
+
+    <!-- menu-bar-btn -->
+    <div class="d-lg-none">
+        <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+   </div>
+   </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+    crossorigin="anonymous"
+    ></script>
+    <script async="./class6.js"></script>
+  </body>
+</html>

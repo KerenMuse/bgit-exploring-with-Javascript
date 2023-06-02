@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <!-- <form>
+        <label>Username</label>
+        <input id="username" type="text" />
+        <input id="submitBtn" type="submit" />
+
+        <select id="courses">
+            <option>Select Courses</option>
+            <option>HTML</option>
+            <option>CSS</option>
+        </select>
+
+        <input id="checker" type="checkbox" value="text">
+        <label>Text</label>
+    </form> -->
+
+    <form>
+        <ul>
+            <label>Enter Fullname</label>
+            <input id="fullname" type="text" />
+            <input id="submitBtn" type="submit" />
+
+            <select id="Gender">
+                <option>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Transgender</option>
+                <option>Tomato</option>
+
+            </select>
+        
+        </ul>
+    </form>
+
+    <script>
+        // let submitBtn = document.getElementById("submitBtn");
+
+        // function getFullname(){
+        //     let fullname = document.getElementById("fullname").value;
+        //     let selectTag = document.querySelector("Gender");
+        //     console.log(selectTag.options[selectTag.selectIndex].outerText);
+        // }
+        let submitBtn = document.getElementById("submitBtn");
+
+        //Check gender function
+        function validate() {
+            let gender = ("#gender").value;
+            if (validatedGender(gender)) {
+                ("#checkGender").outerText;
+            }  else
+            {
+                ("#checkGender").text("Please enter Gender");
+            }
+
+            if ((gender && confirmGender) == "") {
+                ("#divCheckGenderMatch").html("");
+            } else if (gender = confirmGender)
+        };
+
+        function getGender() {
+            event.preventDefault()
+
+            let gender = document.getElementById("gender").value
+
+            let selectTag = document.querySelector("#gender");
+            console.log(selectTag.options[selectTag.selectedIndex].outerText);
+        };
+
+//    //     function getUsername() {
+//    //        event.preventDefault();
+//    //        let userName = document.getElementById("username").value;
+
+//    //      let selectTag = document.querySelector("#courses");
+//    //      console.log(selectTag.options[selectTag.selectedIndex].outerText);
+
+//          let checker = document.getElementById("checker").checked;
+//          console.log(checker);
+//     //    }
+
+        submitBtn.addEventListener("click", getUsername)
+
+        // get Name = () => {
+        //     console.log("hello arrow function");
+        // };  ANOTHER FORM OF FUNCTION
+
+        // use backticks
+
+        let na = "Jack"
+        let In = "Jill"
+
+        console.log("My name is " + na + " " + In);
+
+        console.log('My name is ${na} ${In}');
+
+        /*
+        create a form that has fullname, gender, anything that would require the user selecting an option
+        after the user clicks submit display the user details on your browser (not console)
+        if the user skip any of the tag, alert a message to inform the user of incomplete details.
+        */
+    </script>
+</body>
+</html>
